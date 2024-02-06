@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <title>Document</title>
+    <title>Document</title>
+    <style>
+        .logo{
+            padding: 6px;
+            margin-left: 325px;
+
+        }
+        .logo img{
+            width: 170px;
+        }
+        img{
+            max-width: 100%;
+        }
+        .btn-primary {
+    color: #fff;
+    background: linear-gradient(95.04deg, #FFAA3F 0.82%, #F35B04 97.35%);
+    border: 0;
+    transition: all .5s;
+    margin-left: 50px;
+        }
+        .btn {
+    min-width: 146px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 25px ;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.navitems{
+  padding-left: 20px;
+}
+.btns{
+  color: #fff;
+    background: linear-gradient(95.04deg, #FFAA3F 0.82%, #F35B04 97.35%);
+    border: 0;
+    transition: all .5s;
+    width: 195px;
+  min-width: 146px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px;
+}
+.twoButtons{
+  position: absolute;
+  top: 590px;
+  left: 860px;
+}
+.parent{
+  
+  display: grid;
+  grid-template-columns: repeat(6,ifr);
+  
+  
+  
+
+}
+.child{
+  float: left;
+    width: 11%;
+    padding: 50px 17px;
+    text-align: center;
+    border-radius: 0px 50px 50px 50px;
+    min-height: 317px;
+    margin: 0px 15px;
+    position:relative;
+    left: 150px;
+    
+}
+.child2{
+  padding: 45px 25px 18px;
+    border-radius: 0px 50px 50px 50px;
+  
+    margin-bottom: 40px;
+    border: 3px solid transparent;
+    transition: all .5s;
+    display: block;
+    min-height: 540px;
+    width: 340px;
+    margin-left: 20px;
+}
+.child2:hover{
+  border: 5px solid rgb(207,46,46);
+}
+.drpdwn{
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.dropdown-menu{
+  width:630px; 
+  height: 400px;
+  padding-top:20px;
+   position: absolute;
+   left: -150px;
+   display: none  ;
+}
+li:hover ul{
+  display: block;
+}
+
+.buttonfooter{
+   background: linear-gradient(95.04deg, #FFAA3F 0.82%, #F35B04 97.35%);
+    border: 0;
+    transition: all .5s;
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    color: #fff;
+    width: 66%;
+    height: 62px;
+    font-size: 17px;
+    font-weight: 600;
+   
+}
+.social{
+  background: linear-gradient(99.79deg, #402060 1.01%, #602C93 98.69%);
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg" style="height: 100px;width: 100%; background-color: #ffff; position: fixed;z-index: 10; ">
+        <div class="container-fluid">
+            <div class="logo">
+          <a class="navbar-brand" href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/futura-labs.svg" alt="" style="background-size: cover;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse  " id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item navitems" >
+                <a class="nav-link active " aria-current="page" href="#" style="margin-left: 260px; color: #602c93;font-size:18px; font-weight: bold;font-family: Roboto,sans-serif;">Home</a>
+              </li>
+              <li class="nav-item navitems">
+                <a class="nav-link" href="#" style=" color:#332d2d;  font-size:18px; font-weight: bold; font-family: Roboto,sans-serif">About</a>
+              </li>
+              
+              <li class="nav-item dropdown navitems">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" color:#332d2d; font-family: inherit; font-size:18px; font-weight: bold;">
+                  Internship
+                </a>
+                
+                <ul class="dropdown-menu" style="width:630px; height: 400px;padding-top:20px; position: absolute;left: -150px;">
+                  <div>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/python-icon.png" alt="">&nbsp;Python-Django Fullstack</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/laravel-icon.png" alt="">PHP-Laveral Fullstack</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/mern-icon.png" alt="">MERN Stack</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/flutter-icon.png" alt="">Flutter</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/react-js-icon.png" alt="">React Js</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/ui-icon.png" alt="">UI/Ux</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/front-end-icon.png" alt="">UI/Ux</a></li>
+                </div>
+                <div style="position: absolute;top:20px;left: 250px;">
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/data-science-icon.png" alt="">Data Science</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/aws-icon.png" alt="">AWS</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/net-icon.png" alt="">.Net</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/testing-icon.png" alt="">software Testing & Quality Assurance</a></li>
+                  <li><a class="dropdown-item drpdwn" href="#"><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/dm-icon.png" alt="">Digital Marketing Training in Kozhikode</a></li>
+                  </div>
+              </ul>
+              
+                
+ 
+                 
+
+              </li>
+              <li class="nav-item navitems">
+                <a class="nav-link" href="#" style=" color:#332d2d;  font-size:18px; font-weight: bold;font-family: Roboto,sans-serif">Placements</a>
+              </li>
+              <li class="nav-item navitems">
+                <a class="nav-link" href="#" style=" color:#332d2d;  font-size:18px; font-weight: bold;font-family: Roboto,sans-serif">Careers</a>
+              </li>
+              <li class="nav-item navitems">
+                <a class="nav-link" href="#" style=" color:#602c93;  font-size:18px; font-weight: bold;font-family: Roboto,sans-serif">Contact</a>
+              </li>
+            </ul>
+            <a href="https://thefuturalabs.com/contact/" class="btn btn-primary " title="Get In Touch">Get In Touch  <i class="fas fa-arrow-right  ms-2" ></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <div class="contact-fluid">
+            <img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/banner.jpg" alt="" width="100%" height="802px">
+        </div>
+        <div class="us text text-light  " style="position: absolute; top:280px;left:450px;">
+          <center> <h1 style="font-size:90px ; font-weight: bolder;">Enable. Transform. Accelerate</h1>
+            <br><br>
+            <p style="font-size:17px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;">Be a part of FUTURA LABS, the best learning platform to transform you into a skilled and trained IT <br> professional. We are one of Calicut's most trusted software training institutes, with the highest placement <br> records. Join our hands to get your dream job and stand firm in the industry with all the confidence and <br>proficiency.</p></center> 
+       </div>
+
+       <div class="twoButtons">
+         <button type="button"class="btns"><p style="margin:30px">Get in touch <i class="fa-solid fa-arrow-down"></i></p></button>
+         <button type="button"class="btns"><p style="margin:10px">Call: 799 442 00 46 <i class="fa-solid fa-arrow-down"></i></p></button>
+       </div>  
+      </div>
+    </section>
+<hr style="color: white;"><hr style="color: white;">
+    <section>
+        <div class="connect">
+            <center> <h1 style="font-size:50px ; font-weight: bolder;">Our Process</h1> </center>
+                <hr style="color: white;">
+                <hr style="color: white;">
+                <hr style="color: white;">
+                <br><br><br>
+      </div>
+       <div class="parennt">
+        <div class="child"></div>
+        <div class="child" style="background: #FFEDED;">
+          <div><img src="https://thefuturalabs.com/wp-content/uploads/2022/07/understanding.png" alt="">
+            
+          <p style="color: #332D2D;font-weight: 600;font-family: 'Poppins';font-size: 16px;line-height: 25px; padding-top: 2px;"><b>Understanding & <br>Creating a <br>Customised Training <br>Plan for each <br>student</b></p>
+        </div>
+        </div>
+        <div class="child" style="background: #FFEDED;">
+          <div>
+            <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/student.png" alt=""><br><br>
+            <p style="color: #332D2D;font-weight: 600;font-family: 'Poppins';font-size: 16px;line-height: 25px;"><b>Enabling the student <br>for the industry</b></p>
+ 
+          </div>
+        </div>
+        <div class="child" style="background: #C2E8FF;">
+          <div>
+            <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/professional.png" alt=""><br><br>
+            <p style="color: #332D2D;font-weight: 600;font-family: 'Poppins';font-size: 16px;line-height: 25px;"><b>Transforming the <br> Student as a <br>Professional</b></p>
+          </div>
+          </div>
+        <div class="child" style="background: #BBFFF4;">
+          <div>
+            <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/skills.png" alt=""><br><br>
+            <p style="color: #332D2D;font-weight: 600;font-family: 'Poppins';font-size: 16px;line-height: 25px;"><b>Accelerating<br> the skills</b></p>
+          </div>
+        </div>
+        <div class="child" style="background: #E7E6FF;">
+          <div>
+            <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/skills.png" alt=""><br><br>
+            <p style="color: #332D2D;font-weight: 600;font-family: 'Poppins';font-size: 16px;line-height: 25px;"><b>Providing<br>Placement Opportunities</b></p>
+          </div>
+        </div>
+        <div class="child"></div>
+       </div>    
+       <div style="position: absolute;top:990px; left: 1300px;">
+        <img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/dot-arrow2.png" alt="">
+       </div> 
+       <div style="position: absolute;top:990px; left: 780px;">
+        <img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/dot-arrow2.png" alt="">
+       </div>   
+       <div style="position: absolute;top:1365px; left: 1050px;">
+        <img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/dot-arrow1.png" alt="">
+       </div>
+       <div style="position: absolute;top:1365px; left: 520px;">
+        <img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/dot-arrow1.png" alt="">
+       </div>     
+    </section>
+
+    <section>
+      <div style="position: absolute;top:1500px; left: 845px;margin-bottom: 30px;">
+      <center> <h1 style="font-size:50px ; font-weight: bolder;">Why Chose Us?</h1>
+      </div>
+      
+      
+      <div class="parennt" style="display: grid; grid-template-columns: repeat(4,1fr); position:absolute;top:1650px; left: 330px;">
+        
+        <div class="child2" style="background:#FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/quality.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>High Quality Syllabus</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">The Syllabus is <br> comprehensively designed,<br> keeping the industry <br>standards under the watchful <br>eye of industry experts</p>
+      </div>
+        <div class="child2" style="background: #FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/hands.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;margin-left: 60px; margin-top: 20px;"><b>Hands On Training</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">Our expert trainers provide <br> the students with hands-on<br>live projects under their <br>supervision to give them <br>disclosure of performing <br>different jobs in the industry.</p>
+
+        </div>
+        <div class="child2" style="background: #FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/trainers.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>Well Experienced Trainers</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">We have the most skilled and <br> specialized trainers who<br>provide outstanding<br>mentorship to each student<br>to help them flourish in their <br>careers.</p>
+
+        </div>
+        <div class="child2" style="background: #FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/placements.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>Assured Placements</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">Apart from practical training, <br> we prepare our trainees for<br>interviews and propose<br>applications to ensure the <br>cracking of the right job <br>opportunity. </p>
+
+        </div>
+       
+        <div class="child2" style="background:#FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/art.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>State Of The Art Facility</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">We provide our trainees with <br> the latest tools and<br> technology to help them get <br>complete know-how of the <br>Advanced and modern <br>marketing tools. Our state of <br>the Art facility makes them <br>market-ready in all ways.</p>
+
+        </div>
+        <div class="child2" style="background: #FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/fee.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>Affordable Fee</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">The courses are designed <br> with a reasonable fee<br>structure to ensure that all<br>fresh talents get an <br>opportunity to gain practical <br>exposure and exercise their <br>skills in the best way possible <br>in the industry.</p>
+
+        </div>
+        <div class="child2" style="background: #FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/company.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>Placement Association With 100+ Companies</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">We are associated with 100+ <br> IT companies as their<br> recruitment partner and help<br>them in hiring entry-level <br>talented programmers. If you <br>are good at your job, we have <br>secured a job opportunity for <br>you.</p>
+</div>
+        <div class="child2" style="background: #FFF7F0;">
+          <img src="https://thefuturalabs.com/wp-content/uploads/2022/07/experts.png" alt="" style="margin-left: 90px;">
+          <p style="font-family: 'Poppins';font-weight: 600;font-size: 17px;padding-bottom: 20px;text-align: center; margin-top: 20px;"><b>Backed By Industry Experts</b></p>
+          <p style="font-size: 15px;line-height: 26px; font-weight: 400; font-family: 'Poppins', sans-serif; text-align: center;">The Company was instituted <br> in 2016 by some prominent IT<br>industry experts. Each of the<br>training courses is designed<br>meticulously under the <br>supervision of influential <br>figures in the IT world to <br>ensure the complete <br>conversion of a fresher into a <br>full-fledged IT Professional.</p>
+</div>
+       
+      </div>
+    </section>
+
+    <section>
+    <div style="position: absolute;top: 2900px;width: 100%;">
+      <img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/bg01.jpg" alt="" width="100%" height="600px">
+    </div>
+
+    <div style="position: absolute; top: 3100px;left: 400px;">
+      <form action="">
+        <caption><b>Talk to our advisor</b></caption>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control mt-2 " placeholder="Your name" aria-label="First name" style="    border: 0;width: 100%;height: 53px;background: #fff;color: rgba(51,45,45,90%);padding-left: 19px; font-weight: 500; margin-bottom: 20px; border-radius: 7px;">
+           
+          </div>
+          <div class="col">
+            <input type="text" class="form-control mt-2" placeholder="Contact No" aria-label="Last name" style="height: 53px;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="email" class="form-control mt-2" placeholder="Email" aria-label="First name" style="height: 53px;">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control mt-2" placeholder="Last name" aria-label="Subject" style="height: 53px;">
+          </div>
+        </div>
+        <textarea name="" class="form-control mt-2" id="" placeholder="Message" cols="30" rows="10" style="border: 0;width: 100%;height: 53px;background: #fff;color: rgba(51,45,45,90%);padding-left: 19px;font-weight: 500;margin-bottom: 20px;border-radius: 7px;"></textarea>
+      </form>
+    </div>
+    <div style="position: absolute;top: 3000px; left:1200px">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.952671707214!2d75.77676867587242!3d11.26488944999231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65ec97483c521%3A0x897b1662e5074c01!2sFutura%20Labs!5e0!3m2!1sen!2sin!4v1707155199775!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+
+    <section>
+      <footer >
+        <div style="position: relative; top: 2550px;left: 0px; background-color: #f5f5f5; width: 100%;">
+        <button class="buttonfooter" style="position: absolute;top: 100px; left: 370px;">Talk to our career advisor today on 07994420046 or Enquire Now</button>
+        <br><br>
+        <p style=" text-align:center;margin-left:600px;font-family:  'Poppins'; font-weight: 600; font-size: 16px; max-width: 800px; padding-bottom: 74px;">Do you wish to explore, learn and excel a new skill? Is it time to improve your efficiency to be on par with the latest trends? Futura Labs is the exact platform you are looking for. </p>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p style="color: #20201E;font-family: 'Poppins';font-weight: 600;font-size: 19px;text-transform: uppercase;padding-bottom: 38px;">STAY CONNECTED</p>
+              <div style="position: absolute;top: 490px;left: 530px; display: inline-flex;">
+                <a href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/facebook-icon.png" alt="" class="social" height="10px" width="10px"></a>
+              <a href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/instagram-icon.png" alt="" class="social"></a>
+             <a href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/linkedin-icon.png" alt="" class="social"></a> 
+             <a href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/google-icon.png" alt="" class="social"></a>
+            </div>
+            </div>
+            <div class="col">
+              <p style="color: #20201E;font-family: 'Poppins';font-weight: 600;font-size: 19px;text-transform: uppercase;padding-bottom: 38px;">Find Location At</p>
+              <div style="margin-top: -30px;"><p style="    color: #20201E; text-decoration: none;font-family: 'Poppins';font-size: 16px;line-height: 24px;padding-bottom: 23px;text-align: center;background: url(../images/location.svg) no-repeat left 50px top 4px;background-size: 12px;"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/location.svg" alt="">4th Floor, SG Electronica Building,
+Wayanad Road, Near MC College, Kozhikode - 673011</p>
+<p style="    color: #20201E; text-decoration: none;font-family: 'Poppins';font-size: 16px;line-height: 24px;padding-bottom: 23px;text-align: center;background: url(../images/location.svg) no-repeat left 50px top 4px;background-size: 12px;"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/location.svg" alt="">
+  Door No: 38/3989,
+Opposite Metro Pillar No.489,
+Edappally South, Palarivattom Kochi Pin: 682025</p>
+</div>
+
+            </div>
+            <div class="col">
+              <p style="color: #20201E;font-family: 'Poppins';font-weight: 600;font-size: 19px;text-transform: uppercase;padding-bottom: 38px;">PLEASE CONTACT US</p>
+              <div style="margin-top: -30px;"><a style="text-decoration: none;color: #20201E;font-family: 'Poppins';font-weight: 600;font-size: 19px;text-transform: uppercase;padding-bottom: 38px;" href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/phone.svg" alt="" height="30px"> &nbsp;799 44 200 46
+              </a><br>
+              <a style="text-decoration: none;color: #20201E;font-family: 'Poppins';font-weight: 600;font-size: 19px;text-transform: uppercase;padding-bottom: 38px;" href="#"><img src="https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/phone.svg" alt="" height="30px"> &nbsp;977 80 430 02
+              </a><br>
+              <a style="text-decoration: none;color: #20201E;font-family: 'Poppins';font-weight: 600;font-size: 19px;text-transform: uppercase;padding-bottom: 38px;" href="#"><img src="	https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/email.svg" alt="" height="30px"> &nbsp;info@futuralabs.com
+              </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <hr style="border-top: 5px solid #20201E; padding-top: 20px;">
+      </div>
+    </footer>
+    </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
